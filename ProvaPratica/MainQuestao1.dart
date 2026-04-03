@@ -1,4 +1,4 @@
-import 'pokemon.dart';
+import 'Pokemon.dart';
  
 void main() {
   Pokemon pokemon1 = Pokemon(004, 'Charmander','Fogo', 15, 280, 282, true);
