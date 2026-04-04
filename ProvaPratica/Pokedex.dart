@@ -78,7 +78,7 @@ class Pokedex {
     return resultado;
   }
 
-  // - Listar pokemons com nível acima do mínimo digitado
+  // - Listar pokemons com nível acima do mínimo digitado - (Questão 05)
   List<Pokemon> listarAcimaDoNivel(int nivelMinimo) {
     List<Pokemon> resultado = [];
     for (int i = 0; i < _pokemons.length; i++) {
@@ -89,7 +89,7 @@ class Pokedex {
     return resultado;
   }
 
-  // - Listar pokemons que podem evoluir 
+  // - Listar pokemons que podem evoluir - (Questão 05)
   // - Condição: tem próxima evolução definida e tbm já atingiu o nível necessário
   List<Pokemon> listarQuePodemEvoluir() {
     List<Pokemon> resultado = [];
