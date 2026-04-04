@@ -1,5 +1,5 @@
-import 'pokemon.dart';
-import 'habilidade.dart';
+import 'Pokemon.dart';
+import 'Habilidade.dart';
 
 void main() {
 
