@@ -20,7 +20,7 @@ void main() {
  
   // - Tentativa de adicionar Pokemon repetido
   print('\n------------------------------------------------------------------');
-  pokedex.adicionarPokemon(Pokemon(004, 'Charmander', 'Fogo', 15, 280, 282, true));
+  pokedex.adicionarPokemon(Pokemon(001, 'Bulbasaur', 'Planta e Veneno', 15, 250, 294, true));
  
   pokedex.listarTodos();
  
@@ -42,7 +42,7 @@ void main() {
  
   // - Remover Pokemons
   print('\n------------------------------------------------------------------');
-  pokedex.removerPokemonPorNumero(004);  // - Existe
+  pokedex.removerPokemonPorNumero(001);  // - Existe
   pokedex.removerPokemonPorNumero(999);  // - Não existe
  
   pokedex.listarTodos();
