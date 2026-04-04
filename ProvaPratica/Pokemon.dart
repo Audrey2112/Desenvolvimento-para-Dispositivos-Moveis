@@ -156,9 +156,9 @@ class Pokemon implements RegistravelNaPokedex {
       return;
     }
 
-    String nomeAnterior = _nome;
-    _nome = proximaEvolucao!;
-    proximaEvolucao = null;
+    String nomeAnterior = _nome; // - vai guardar o nome atual do Pokemon em uma variável
+    _nome = proximaEvolucao!; // - aqui ele muda o nome atual pelo nome da proxima evolução
+    proximaEvolucao = null; // - vai apagar a evolução após o seu uso. Só no caso de já ter sido evoluído, daí fica como null
     _hpMaximo = _hpMaximo + 20;
     _hpAtual = _hpMaximo;
 
