@@ -22,11 +22,10 @@ void main() {
   choque.usar(pokemon1, pokemon2);   
 
   print('\n${pokemon2.nome}(energia: ${pokemon2.energia}) usa a habilidade Jato de Água contra o Pokemon ${pokemon3.nome}!!!! (custo de 15 energias):');
-  jato.usar(pokemon2, pokemon3);  // - squirtle: 50 → usa → fica com 35
-
+  jato.usar(pokemon2, pokemon3);  
+  
   print('\n${pokemon3.nome} (energia: ${pokemon3.energia}) usa a habilidade Choque do Trovão contra o Pokemon ${pokemon1.nome}!!!!!! (custo de 25 energias):');
-  chamas.usar(pokemon3, pokemon1); // - charmander: 30 → usa → fica com 5
-
+  chamas.usar(pokemon3, pokemon1); 
 
   print('\nFichas dos Pokemons após usarem suas habilidades:');
   pokemon1.exibirFicha();
