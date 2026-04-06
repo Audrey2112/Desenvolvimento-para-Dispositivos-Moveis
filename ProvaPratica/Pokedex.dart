@@ -3,10 +3,12 @@ import 'Pokemon.dart';
 // - Criação da classe Pokedéx - (Questão 04)
 class Pokedex {
   List<Pokemon> _pokemons = []; // - O List<Pokemon> indica que a lista só aceita objetos do tipo Pokemon
- 
+
+  // - Getter necessário para conseguir acessar os pokemons de fora da classe, pq ali em cima esse _pokemons foi criado como sendo privado - (Questão 10)
+  List<Pokemon> get todos => _pokemons; // - => significa retorno
  
   // - Método adicionarPokemon(Pokemon p) - (Questão 04)
-  void  adicionarPokemon(Pokemon p) {
+  void adicionarPokemon(Pokemon p) {
     for (int i = 0; i < _pokemons.length; i++) {  // - O length retorna o número de elementos que a lista tem naquele momento
       if (_pokemons[i].numero == p.numero) {
         print('Erro. O Pokemon ${p.nome} (numero ${p.numero}) já existe nesta POkedéx!');
