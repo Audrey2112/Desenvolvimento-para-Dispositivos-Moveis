@@ -90,6 +90,10 @@ class Pokemon implements RegistravelNaPokedex {
 
     // - Da Questão 07:
     print('Energia: $energia');
+
+    // - Da questão 09:
+    print('Visto': $_visto);
+    print('Favorito: ' $_favorito);
     
     // - Da Questão 03: 
     if (proximaEvolucao != null){
