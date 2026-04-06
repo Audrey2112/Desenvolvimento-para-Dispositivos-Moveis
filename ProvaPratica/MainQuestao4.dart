@@ -43,7 +43,7 @@ void main() {
   // - Remover Pokemons
   print('\n------------------------------------------------------------------');
   pokedex.removerPokemonPorNumero(001);  // - Existe
-  pokedex.removerPokemonPorNumero(999);  // - Não existe
+  pokedex.removerPokemonPorNumero(002);  // - Não existe
  
   pokedex.listarTodos();
 }
