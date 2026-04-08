@@ -4,4 +4,4 @@
 - Análise e Desenvolvimento de Sistemas</br>
 - Período: 5°</br>
 - Aluna: Audrey Cristhiny T. Kochinski</br>
-- Descrição: Criado para conter atividades/Provas/EDs práticos em Dart e Flutter
+- Descrição: Criado para conter Atividades/Provas/EDs práticos em Dart e Flutter
