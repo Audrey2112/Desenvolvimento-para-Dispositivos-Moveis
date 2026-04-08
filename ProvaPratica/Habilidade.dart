@@ -69,7 +69,6 @@ class Lancachamas extends Habilidade {
 
 // - Polimorfismo em batalha - (Questão 08)
 void batalhaPokemon(Pokemon atacante, Pokemon defensor, Habilidade habilidade) {
-  print('-------------------------------------------------------------------');
   print('\n${atacante.nome} usa a habilidade ${habilidade.nome} contra o Pokemon ${defensor.nome}!!!!!');
   habilidade.usar(atacante, defensor); // - aqui ocorre o Polimorfismo: mesmo método usar(), mas com comportamentos diferentes
 
