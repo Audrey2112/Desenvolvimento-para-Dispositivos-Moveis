@@ -10,18 +10,18 @@ void main() {
   Pokemon pokemon4 = Pokemon(025, 'Pikachu', 'Elétrico', 25, 230, 274, true);
   Pokemon pokemon5 = Pokemon(052, 'Meowth ', 'Normal', 15, 260, 284, false);
 
-  // - Marcando alguns Pokemons como capturados e tbm favoritando eles
-  pokemon1.marcarComoCapturado();
-  pokemon1.favoritar();
-  pokemon2.marcarComoCapturado();
-  pokemon2.favoritar();
-  print('\n ');
-
   pokedex.adicionarPokemon(pokemon1);
   pokedex.adicionarPokemon(pokemon2);
   pokedex.adicionarPokemon(pokemon3);
   pokedex.adicionarPokemon(pokemon4);
   pokedex.adicionarPokemon(pokemon5);
+  print('\n ');
+  
+  // - Marcando alguns Pokemons como capturados e tbm favoritando eles
+  pokemon1.marcarComoCapturado();
+  pokemon1.favoritar();
+  pokemon2.marcarComoCapturado();
+  pokemon2.favoritar();
 
   // - Consulta 1: filtrar pokémons com hpAtual abaixo de 30;
   // - where() vai receber a função anônima (p) => p.hpAtual < 30
