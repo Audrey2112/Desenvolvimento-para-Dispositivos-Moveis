@@ -9,7 +9,7 @@ void main() {
   pokemon1.exibirFicha();
   pokemon2.exibirFicha();
  
-  print('\Favoritando o Pokemon ${pokemon1.nome} antes de capturá-lo:');
+  print('\nFavoritando o Pokemon ${pokemon1.nome} antes de capturá-lo:');
   pokemon1.favoritar(); 
  
   print('\nMarcando o Pokemon ${pokemon1.nome} como visto:');
