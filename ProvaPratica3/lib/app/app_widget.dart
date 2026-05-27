@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'app_routes.dart';
 
-class AppWidget extends StatelessWidget {
+class AppWidget extends StatelessWidget { // - StatelessWidget porque o tema e estrutura não mudam dinamicamente
   final Map<String, WidgetBuilder> _rotas;
 
   const AppWidget(this._rotas, {super.key});
