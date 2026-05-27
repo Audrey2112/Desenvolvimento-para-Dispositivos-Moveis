@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// - Importações das páginas exibidas nas abas inferiores
 import '../jogos/jogos_page.dart';
 import '../musicas/musicas_page.dart';
 import '../perfil/perfil_page.dart';
@@ -7,7 +8,7 @@ import '../produtos/produtos_page.dart';
 import 'widget/home_bottom_navigation.dart';
 import '../pokemons/pokemons_page.dart'; // - nova rota do arquivo criado (pokemons) - (Questão 02)
 
-class HomePage extends StatefulWidget {
+class HomePage extends StatefulWidget { // - StatefulWidget pq a tela precisa mudar
   const HomePage({super.key});
 
   @override
@@ -22,7 +23,7 @@ class _HomePageState extends State<HomePage> {
     JogosPage(),
     MusicasPage(),
     PerfilPage(),
-    PokemonsPage(), // - Nova funcionalidade na BottomNavigation - (Questão 03)
+    PokemonsPage(), // - Nova funcionalidade (rota) na BottomNavigation - (Questão 03)
   ];
 
   final List<String> _titulos = const [
@@ -30,12 +31,12 @@ class _HomePageState extends State<HomePage> {
     'Jogos',
     'Músicas',
     'Perfil',
-    'Pokemons',
+    'Pokemons', // - Novo título - (Questão 03)
   ];
 
-  void _alterarPagina(int novoIndice) {
-    setState(() {
-      _indiceSelecionado = novoIndice;
+  void _alterarPagina(int novoIndice) { // - Método responsável por alterar a página selecionada
+    setState(() { // - Atualiza a interface
+      _indiceSelecionado = novoIndice; // - Troca o índice atual
     });
   }
 
@@ -49,9 +50,9 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       body: IndexedStack(index: _indiceSelecionado, children: _paginas),
-      bottomNavigationBar: HomeBottomNavigation(
-        indiceSelecionado: _indiceSelecionado,
-        onTap: _alterarPagina,
+      bottomNavigationBar: HomeBottomNavigation( // - Barra de navegação na parte inferior
+        indiceSelecionado: _indiceSelecionado, // - índice atual que se encontra
+        onTap: _alterarPagina, // - método que é executado ao clicar na opção
       ),
     );
   }
