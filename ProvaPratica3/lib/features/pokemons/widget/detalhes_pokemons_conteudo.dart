@@ -1,5 +1,6 @@
+// - Criando Widget responsável pelo conteúdo visual da tela de detalhes - (Questão 08)
 import 'package:flutter/material.dart';
-import '../../../shared/models/pokemon.dart';
+import '../../../shared/models/pokemon.dart'; // - Importa a model Pokemon criada no projeto -(Questão 04)
 
 class DetalhesPokemonConteudo extends StatelessWidget {
   final Pokemon pokemon; // - recebe um pokemon por parametro
@@ -165,10 +166,10 @@ class DetalhesPokemonConteudo extends StatelessWidget {
   }
 }
 
-class _InfoCard extends StatelessWidget {
-  final String titulo;
-  final String valor;
-  final IconData icone;
+class _InfoCard extends StatelessWidget { // - Widget reutilizável dos pequenos cards de informação
+  final String titulo; // - Título do card
+  final String valor; // - Valor 
+  final IconData icone; // - Ícone
 
   const _InfoCard({
     required this.titulo,
@@ -180,24 +181,24 @@ class _InfoCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final colorScheme = Theme.of(context).colorScheme;
 
-    return Container(
-      width: 160,
-      padding: const EdgeInsets.all(14),
+    return Container( // - Pequeno card de informação
+      width: 160, // - Largura fixa
+      padding: const EdgeInsets.all(14), // - Espaçamento interno
       decoration: BoxDecoration(
-        color: colorScheme.surfaceContainerHighest,
+        color: colorScheme.surfaceContainerHighest, // - Cor do card
         borderRadius: BorderRadius.circular(16),
       ),
       child: Row(
         children: [
-          Icon(icone, color: colorScheme.primary),
+          Icon(icone, color: colorScheme.primary), // - Ícone do card
           const SizedBox(width: 10),
-          Expanded(
-            child: Column(
+          Expanded( // - Expanded evita overflow do texto
+            child: Column( 
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(titulo, style: Theme.of(context).textTheme.labelMedium),
+                Text(titulo, style: Theme.of(context).textTheme.labelMedium), // - Título da informação
                 const SizedBox(height: 4),
-                Text(
+                Text( // - Valor
                   valor,
                   style: Theme.of(
                     context,
