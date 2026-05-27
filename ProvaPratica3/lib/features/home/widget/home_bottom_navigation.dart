@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
 class HomeBottomNavigation extends StatelessWidget {
-  final int indiceSelecionado;
-  final ValueChanged<int> onTap;
+  final int indiceSelecionado; // - Índice atualmente selecionado
+  final ValueChanged<int> onTap; // - Função executada ao clicar em algum item
 
   const HomeBottomNavigation({
     super.key,
-    required this.indiceSelecionado,
-    required this.onTap,
+    required this.indiceSelecionado, // - Significa: obrigatóriamente informe o índice atual
+    required this.onTap, // - mesma coisa de ser obrigatório, mas para a função de clique
   });
 
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(
+    return BottomNavigationBar( // - BottomNavigationBar cria menu inferior de navegação
       currentIndex: indiceSelecionado,
       onTap: onTap,
       type: BottomNavigationBarType.fixed,
