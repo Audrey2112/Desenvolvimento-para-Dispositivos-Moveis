@@ -1,19 +1,19 @@
 // - Criação da model (classe) Pokemon, seguindo o que tinha na ProvaPrática 1 - (Questão 04)
 
 class Pokemon {
-  final int numero;
+  final int numero; // - o final significa que o valor é imutável, depois de criado não muda
   final String nome;
   final String tipo;
   final int nivel;
   final int hpMaximo;
-  final String? proximaEvolucao;
+  final String? proximaEvolucao; // - O ? significa que o valor é opcional, pode ser nulo
   final int nivelEvolucao;
   final int energia;
   final String descricao;
   final String urlImagem;
 
-  const Pokemon({
-    required this.numero,
+  const Pokemon({ // - construtor que cria objetos pokemons
+    required this.numero, // - o required basicamente diz: esse valor é obrogatório
     required this.nome,
     required this.tipo,
     required this.nivel,
